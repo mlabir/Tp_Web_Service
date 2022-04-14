@@ -4,7 +4,7 @@
 
  Montrer comment creer un simple web service dans une application Java puis regarder le WSDL, tester le web service et enfin creer un client java et un client .NET
  
-# Partie 1 : creation d'un simple projet java 
+# Partie 1 : creation d'un web service et une simple application java pour le consommer :
  
  -Pour creer un web service on a besoin de creer une simple classe  java contient des methodes.
  
