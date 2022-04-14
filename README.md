@@ -12,12 +12,9 @@
  
 ## Demmarage de serveur JaxWS
  
- ![ws1](https://user-images.githubusercontent.com/102171913/163439807-0f508bf2-e992-4015-9a44-a417f60637c1.PNG)
+ ![image](https://user-images.githubusercontent.com/102171913/163480492-00bc9707-e453-499a-b102-c4b3a62ecdbc.png)
 
 ## L'utilisation du navigateur pour visualiser notre WSDL 
-
-#### Remarque:
-j'ai changé le numero de port 😊
 
 ![ws2](https://user-images.githubusercontent.com/102171913/163440507-07fd24a7-f1e2-4fde-92ab-a20f3ccde265.PNG)
 
@@ -79,6 +76,8 @@ le client demmande au stub de faire appel à une methode, le stub se connecte au
 
 On peut tout simplement generer le proxy sur lingne de comande avec la commande 
 #### --> wsimport -s .Adresse_wsdl
+
+![image](https://user-images.githubusercontent.com/102171913/163480709-40d67d55-e4d8-4ada-91a6-7ad0a62060fa.png)
 
 ![image](https://user-images.githubusercontent.com/102171913/163473074-35aa042f-a0fb-4536-9412-a1006c7206f2.png)
 
