@@ -17,7 +17,7 @@
 ## L'utilisation du navigateur pour visualiser notre WSDL 
 
 #### Remarque:
-j'ai changer le numero de port 😊
+j'ai changé le numero de port 😊
 
 ![ws2](https://user-images.githubusercontent.com/102171913/163440507-07fd24a7-f1e2-4fde-92ab-a20f3ccde265.PNG)
 
@@ -69,10 +69,34 @@ on doit creer une application Java pour client permet de consommer le web servic
 
 ![image](https://user-images.githubusercontent.com/102171913/163454597-dae5feb3-dfab-434d-943a-96f6160e7508.png)
 
--On a cree une application java dans laquelle on faire appele a des la classe dans le proxy qu'ona generer.
+-On a cree une application java dans laquelle on faire appele a des la classe dans le proxy qu'ona generer (l'invocation de methodes a distance).
 
+### Comment ça marche:
 
+le client demmande au stub de faire appel à une methode, le stub se connecte au JaxWS (SKELETON)(c'est l'intermmediare coté serveur) qui recoit la requette et faire appele à la methode du web service puis recupére le resultat et envoyé le resultat en format xml au le stub (qui l'intermediaire coté client) qui prend le resultat et le fournit au client
 
+#### Remarque:
+
+On peut tout simplement generer le proxy sur lingne de comande avec la commande 
+#### --> wsimport -s .Adresse_wsdl
+
+![image](https://user-images.githubusercontent.com/102171913/163473074-35aa042f-a0fb-4536-9412-a1006c7206f2.png)
+
+#### l'execution de notre application java:
+
+![execution](https://user-images.githubusercontent.com/102171913/163473454-64b1e6c5-e856-4818-bc65-19655825ff45.PNG)
+
+# Partie 2 :  consommer Notre web service dans une application .Net
+
+Tout d'abord on doit génerer le proxy a partir de WSDL:
+
+![generation  net](https://user-images.githubusercontent.com/102171913/163473902-c7dcf1c7-c566-41a6-bf43-4baedb95dc9e.PNG)
+
+aprés on a creer une simple application .Net (orienté objet distribué) qui affiche la conversion euro to dh et la liste des comptes avec le solde.
+
+#### Resultat:
+
+![execution 2](https://user-images.githubusercontent.com/102171913/163474585-4b6d551e-cb5b-4595-a572-f9b03d45708c.PNG)
 
 
 
