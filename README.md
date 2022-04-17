@@ -70,7 +70,7 @@ on doit creer une application Java pour client permet de consommer le web servic
 
 ### Comment ça marche:
 
-le client demmande au stub de faire appel à une methode, le stub se connecte au JaxWS (SKELETON)(c'est l'intermmediare coté serveur) qui recoit la requette et faire appele à la methode du web service puis recupére le resultat et envoyé le resultat en format xml au le stub (qui l'intermediaire coté client) qui prend le resultat et le fournit au client
+le client demmande au stub de faire appel à une methode, le stub se connecte au JaxWS (SKELETON)(c'est l'intermmediare coté serveur) qui recoit la requette et faire appele à la methode du web service puis recupére le resultat et envoyé le resultat en format xml au stub (qui est l'intermediaire coté client) qui prend le resultat et le fournit au client
 
 #### Remarque:
 
